@@ -1,0 +1,19 @@
+@import "variables";
+.font-sz{
+	font-size:$header-title-size;
+	color:$hearder-color;
+}
+.message{
+	width: 800px;
+	background-color: #ccc;
+	color:red;
+	margin: 0 auto;
+	box-shadow: 3px 3px 4px gray;
+}
+#results{
+	color:white;
+}
+#map {
+        height: 400px;
+        width: 100%;
+       }

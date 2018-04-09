@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Document</title>
+	<style>
+		 #map {
+        height: 400px;
+        width: 100%;
+       }
+	</style>
+</head>
+<body>
+	<h2>台中市商圈資訊</h2>
+		<form action="">
+			<label for="open">全天候開放的景觀</label>
+			<select id="open" name="open">
+				<option value="" disabled selected>-- 請選擇商圈 --</option>
+ 			 	<option value ="精明一街商圈">精明一街商圈</option>
+ 			 	<option value ="高雄國際會館">高雄國際會館</option>
+ 			</select>
+		</form>
+			<input type ="submit" value="確認" id="btn" />
+		<div id ="results">
+		<ul class="content-list"></ul>
+    <div id="map"></div>
+    <script>
+    	
+    </script>
+    	
+    </div>     
+    <script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/json.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgdsPcZYgODXFMrYBKg3aT6NsQqLnRK00"></script>
+	</body>
+</html>
