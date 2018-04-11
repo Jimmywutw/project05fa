@@ -8,51 +8,62 @@
 </head>
 <body>
     <div class="message">
-    	<h1 class="font-sz">hello world</h1>
-		<h2>台中市商圈資訊</h2>
-		<form action="">
-			<label for="open">全天候開放的景觀</label>
-			<select id="open" name="open">
-        <option value="" disabled selected>-- 請選擇商圈 --</option>
-        <option value ="台中市全商圈">台中市全商圈</option>
- 			 	<option value ="精明一街商圈">精明一街商圈</option>
- 			 	<option value ="精明二街商圈">精明二街商圈</option>
- 			 	<option value ="金獅湖蝴蝶園">金獅湖蝴蝶園</option>
- 			 	<option value ="壽山動物園">壽山動物園</option>
-        <option value ="壽山動物園">壽山動物園</option>
-        <option value ="壽山動物園">壽山動物園</option>
-        <option value ="壽山動物園">壽山動物園</option>
-        <option value ="壽山動物園">壽山動物園</option>
-        <option value ="壽山動物園">壽山動物園</option>
-        <option value ="壽山動物園">壽山動物園</option>
-        <option value ="壽山動物園">壽山動物園</option>
-        <option value ="壽山動物園">壽山動物園</option>
-        <option value ="壽山動物園">壽山動物園</option>
+    	<div class="bg">
+    		<div class="bg-box">    			
+			<h2 id="title">台中市商圈資訊</h2>
+    		</div>
+    		
+    	</div>
+    	<div class="formboxes">
+    		<form-box>
+    			<span>請選擇商圈</span>
+    		</form-box>
+    		<form-box>
+    			<form action="">
+					<label for=" choise"></label>
+					<select id="choise" name="choise">
+						<option value ="null" >-- 請選擇商圈 --</option>
+						<option value ="台中市全商圈">台中市全商圈</option>
+						<option value ="精明一街商圈">精明一街商圈</option>
+						<option value ="大隆路商圈">大隆路商圈</option>
+						<option value ="電子街商圈">電子街商圈</option>
+						<option value ="繼光街商圈">繼光街商圈</option>
+						<option value ="美術園道商圈">美術園道商圈</option>
+						<option value ="天津路服飾商圈">天津路服飾商圈</option>
+						<option value ="大坑商圈">大坑商圈</option>
+						<option value ="一中街商圈">一中街商圈</option>
+						<option value ="逢甲商圈">逢甲商圈</option>
+						<option value ="自由路商圈">自由路商圈</option>
+						<option value ="昌平皮鞋商圈">昌平皮鞋商圈</option>
+						<option value ="谷關商圈">谷關商圈</option>
+						<option value ="東勢形象商圈">東勢形象商圈</option>
+						<option value ="新社商圈">新社商圈</option>
+						<option value ="豐原廟東復興商圈">豐原廟東復興商圈</option>
+						<option value ="后里泰安商圈">后里泰安商圈</option>
+						<option value ="烏日啤酒商圈">烏日啤酒商圈</option>
+						<option value ="太平樹孝商圈">太平樹孝商圈</option>
+						<option value ="霧峰區樹仁路商圈">霧峰區樹仁路商圈</option>
+						<option value ="東海藝術街商圈">東海藝術街商圈</option>
+						<option value ="大甲鎮瀾觀光商圈">大甲鎮瀾觀光商圈</option>
+						<option value ="大里中興商圈">大里中興商圈</option>
 
-			</select>
+				</select>
 		</form>
-		 <input type="submit" value="確認" id="btn" />
+    		</form-box>
+    		<form-box>
+    			<input type="submit" value="確認" id="btn" />
+    		</form-box>
+    	</div>
+		
+		 
 		<div id="results">
 		<ul class="content-list"></ul>
 		</div>
-		<div id="map">map
+		<div id="js-content">
+		<div id="map">選擇商圈後，再按確認，以下則顯示地圖！
     	</div>
-    <script>
-    	function initMap() {
- 		var latlng = new google.maps.LatLng(data[i].Wgs84Y, ata[i].Wgs84X);
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    	
-    </script>
-    	
+    
+    	</div>
     </div>     
     <script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/json.js"></script>

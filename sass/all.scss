@@ -1,4 +1,26 @@
 @import "variables";
+.bg{
+	background-image: url(https://img.miha.tw/photo/2014-1/0819tcfirst/tcfirst01.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50vh;
+	display: flex;
+	justify-content:center;
+	align-items:flex-start;
+	.bg-box{
+		margin-top: 2rem;
+		background-color: rgba(255,255,255,0.3);
+		
+		#title{
+			font-size: 3rem;
+			font-weight: bold;
+			text-shadow: 3px 3px 3px #000;
+			padding: 1.5rem;
+			//margin-top: 3rem;
+		}
+	}
+
+}	
 .font-sz{
 	font-size:$header-title-size;
 	color:$hearder-color;
@@ -8,6 +30,7 @@
 	background-color: #ccc;
 	color:red;
 	margin: 0 auto;
+	margin-bottom: 50px;
 	box-shadow: 3px 3px 4px gray;
 }
 #results{
@@ -17,3 +40,25 @@
         height: 400px;
         width: 100%;
        }
+.content-list{
+	text-align: center;
+	padding-bottom: 15px;
+}
+.formboxes{
+	display: flex;
+	justify-content:space-around;
+	padding-top: 22px;
+    padding-bottom: 18px;
+
+
+	>form-box{
+		border: 1px solid white;
+		&:nth-child(odd){
+		background-color: blue;
+		//flex-grow: 2;
+	}
+	}
+}
+option{
+	width: 100%;
+}
