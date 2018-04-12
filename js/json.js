@@ -269,7 +269,7 @@ $(document).ready(function() {
 
 marker = [];
 // Check select value then create init map
- 	for (var i=0; i <data.length;i++){
+ 	for (var i=0; i < data.length; i++){
  		var area = data[i].商圈名稱;
  		if (area === $("#choise").val()) {
  			var latlng = new google.maps.LatLng(data[i].Wgs84Y, data[i].Wgs84X);
@@ -287,7 +287,14 @@ marker = [];
               center: latlng
             };
         	}
-    		 				
+    	else if(!$("#choise").val()){
+           			console.log($("#choise").val());
+					alert('請選擇商圈！');
+					break;
+
+
+				}
+
  		}
  	
  		// Create map
@@ -329,13 +336,19 @@ marker = [];
             	marker[i] = new google.maps.Marker({
                 position: new google.maps.LatLng(data[i].Wgs84Y,data[i].Wgs84X),
                 map: map,
-                title: area, add, phone
-                          //title: '這是測試2'
+                title: area, add, phone                         
                         });
             	google.maps.event.addListener(marker[i], 'click', function(){ 
 						showInfo(map, this);
 						});// End of area addListener
            				}// End of else if
+           		/*else if(i ==2 || i > 24){
+           			console.log(i);
+					alert('請選擇商圈！');
+					break;
+
+
+				}*/
  					showInfo = function(mapObj, markerObj) { // Open infowindow function
 						  infowindow.setContent(infoContent(markerObj));
 						  infowindow.open(mapObj, markerObj);
@@ -354,11 +367,11 @@ marker = [];
 
 
 		}// End of for
-				if($('#choise').val() === 'null') {
+				/*if($('#choise').val() === 'null') {
 					alert('請選擇商圈！');
 
 
-				}
+				}*/
 
 	
 		});  
